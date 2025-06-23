@@ -39,9 +39,9 @@ repos:
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.12.0
-    hooks:  # Format before linting
+    hooks:
+      - id: ruff-check
       # - id: ruff-format
-      - id: ruff
 
   - repo: https://github.com/tox-dev/pyproject-fmt
     rev: v2.6.0
